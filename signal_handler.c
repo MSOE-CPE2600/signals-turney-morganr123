@@ -4,9 +4,10 @@
  */
 
 /**
- * Modified by:
+ * Modified by: Ryan Morgan
  * 
  * Brief summary of modifications:
+ * Sets a signal handler for SIGINT, the handler prints a message and then quits
  */
 
 
@@ -20,7 +21,7 @@
  */
 void handle_signal() {
     printf("Received a signal\n");
-    exit(1);
+    // exit(1); remove exit(1) so program does not terminate once it recieves a signal
 }
 
 int main() {
